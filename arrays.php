@@ -20,3 +20,38 @@ print_r($cliente1);
 
 $cliente2['nome'] = 'Lucas';
 print_r($cliente2);
+
+$nomes = ['maria','jose','carlos'];
+list($nome1,$nome2,$nome3) = $nomes;
+echo $nome1.PHP_EOL;
+echo $nome2.PHP_EOL;
+echo $nome3.PHP_EOL;
+
+list($nome1,,$nome3) = 'Lucas';
+echo $nome3;
+
+$familia = [
+    'Lucas'   => 'Pai',
+    'Gabriela'=>'esposa',
+    'Hercules'=>'filho'
+];
+
+extract($familia);
+
+echo $Lucas;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
