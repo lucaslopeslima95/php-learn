@@ -35,10 +35,21 @@ $familia = [
     'Gabriela'=>'esposa',
     'Hercules'=>'filho'
 ];
-
 extract($familia);
-
 echo $Lucas;
+
+/**Count Recursive - contador de array considerando itens subarrays*/
+$empresa  = [
+    "ADM"=>[
+        'Lucas',
+        'Gabriela'
+    ],
+    "Diretoria"=>[
+        "Hercules"
+    ]
+];
+echo PHP_EOL.count($empresa,COUNT_RECURSIVE);
+
 
 
 
